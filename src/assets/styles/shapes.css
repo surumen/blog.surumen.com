@@ -1,0 +1,118 @@
+@import 'variables.css';
+
+.shape-hexagon {
+  display: block;
+  width: 100px;
+  height: 60px;
+  background: red;
+  position: relative;
+}
+.shape-hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid red;
+}
+.shape-hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid red;
+}
+.shape-square {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+}
+.shape-circle {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  border-radius: 50%;
+}
+.shape-pentagon {
+  position: relative;
+  width: 90px;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: red transparent;
+}
+.shape-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent red;
+}
+.shape-triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  margin-top: 100px;
+}
+.shape-octagon {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+}
+.shape-octagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid red;
+  border-left: 29px solid #F9F7FE;
+  border-right: 29px solid #F9F7FE;
+  width: 100px;
+  height: 0;
+}
+.shape-octagon:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid red;
+  border-left: 29px solid #F9F7FE;
+  border-right: 29px solid #F9F7FE;
+  width: 100px;
+  height: 0;
+}
+.shape-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: red;
+  position: relative;
+  top: -50px;
+}
+.shape-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: red;
+}

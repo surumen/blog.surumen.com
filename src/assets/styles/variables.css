@@ -1,0 +1,19 @@
+--media-xs: 0;
+--media-sm: 480px;
+--media-md: 640px;
+--media-lg: 900px;
+--media-xl: 1200px;
+--media-tv: 1680px;
+
+
+--color-background: #f9f9f9;
+--color-accent: #168dd9;
+--color-dark: #222222;
+--color-light: #FFFFFF;
+--color-link: --color-dark;
+
+
+--background-dark: #333333;
+
+--shape-width: 80px;
+--shape-height: 80px;

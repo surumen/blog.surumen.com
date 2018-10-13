@@ -1,0 +1,332 @@
+@import 'variables.css';
+
+
+/****************************************************************/
+/*                    Imported Fonts                            */
+/****************************************************************/
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+@font-face {
+    font-family: "Arquette Regular";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/ATCArquette-Regular.eot");
+    src: url("../fonts/ATCArquette-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ATCArquette-Regular.woff2") format("woff2"), url("../fonts/ATCArquette-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: "Arquette Regular Italic";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/ATCArquette-RegularItalic.eot");
+    src: url("../fonts/ATCArquette-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/ATCArquette-RegularItalic.woff2") format("woff2"), url("../fonts/ATCArquette-RegularItalic.woff") format("woff")
+}
+
+@font-face {
+    font-family: "Arquette Medium";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/ATCArquette-Medium.eot");
+    src: url("../fonts/ATCArquette-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ATCArquette-Medium.woff2") format("woff2"), url("../fonts/ATCArquette-Medium.woff") format("woff")
+}
+
+@font-face {
+    font-family: "Arquette Medium Italic";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/ATCArquette-MediumItalic.eot");
+    src: url("../fonts/ATCArquette-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/ATCArquette-MediumItalic.woff2") format("woff2"), url("../fonts/ATCArquette-MediumItalic.woff") format("woff")
+}
+
+/****************************************************************/
+/*                    Layout                                    */
+/****************************************************************/
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+body,
+#app {
+    height: 100%;
+    font-family: "Arquette Regular", sans-serif;
+}
+
+
+section {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: var(--color-dark, #222222);
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.64282;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/****************************************************************/
+/*                    Font Classes                              */
+/****************************************************************/
+
+.sans-serif {
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif
+}
+
+.serif {
+    font-family: georgia, times, serif
+}
+
+.system-sans-serif {
+    font-family: sans-serif
+}
+
+.system-serif {
+    font-family: serif
+}
+
+code,
+.code {
+    font-family: Consolas, monaco, monospace
+}
+
+.courier {
+    font-family: 'Courier Next', courier, monospace
+}
+
+.helvetica {
+    font-family: 'helvetica neue', helvetica, sans-serif
+}
+
+.avenir {
+    font-family: 'avenir next', avenir, sans-serif
+}
+
+.athelas {
+    font-family: athelas, georgia, serif
+}
+
+.georgia {
+    font-family: georgia, serif
+}
+
+.times {
+    font-family: times, serif
+}
+
+.bodoni {
+    font-family: "Bodoni MT", serif
+}
+
+.calisto {
+    font-family: "Calisto MT", serif
+}
+
+.garamond {
+    font-family: garamond, serif
+}
+
+.baskerville {
+    font-family: baskerville, serif
+}
+
+.i {
+    font-style: italic
+}
+
+.fs-normal {
+    font-style: normal
+}
+
+
+/****************************************************************/
+/*                    Headings and paragraphs                   */
+/****************************************************************/
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Arquette Medium";
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+a {
+    color: #000
+}
+
+code {
+    font-size: .8em
+}
+
+blockquote {
+    color: #999;
+    border-left: 1px solid #aaa;
+    margin: 0;
+    padding-left: 1em
+}
+
+em,
+i {
+    font-family: "Arquette Regular Italic", sans-serif;
+    font-style: normal
+}
+
+h1 {
+    color: var(--color-dark, #222222);
+}
+
+h2 {
+    color: var(--color-dark, #222222);
+}
+
+h3 {
+    color: var(--color-dark, #222222);
+}
+
+h4 {
+    color: var(--color-dark, #222222);
+}
+
+p {
+    color: var(--color-dark, #222222);
+}
+
+
+.app-left {
+    height: 98%;
+}
+
+.app-left,
+.app-right {
+    display: block;
+    position: absolute;
+}
+
+.scene-wrapper {
+  margin-top: 50% !important;
+}
+
+
+
+/****************************************************************/
+/*                   Font-sizes Computers                       */
+/****************************************************************/
+
+@media screen and (min-width: 60em) {
+    .app-left {
+        display: block;
+        position: fixed;
+        width: 30%;
+        top: 0;
+        height: 100%;
+    }
+
+    .app-right {
+        display: block;
+        position: fixed;
+        width: 70%;
+        top: 0;
+        height: 100%;
+    }
+
+    .app-left {
+        left: 0;
+        overflow: hidden;
+    }
+
+    .app-right {
+        right: 0;
+        overflow: auto;
+    }
+
+    .headline {
+        font-size: 6rem
+    }
+
+    .subheadline {
+        font-size: 5rem
+    }
+
+    .h1 {
+        font-size: 3rem
+    }
+
+    .h2 {
+        font-size: 2.25rem
+    }
+
+    .h3 {
+        font-size: 1.5rem
+    }
+
+    .h4 {
+        font-size: 1.25rem
+    }
+
+    .h5 {
+        font-size: 1rem
+    }
+
+    .h7 {
+        font-size: .875rem
+    }
+
+    .h7 {
+        font-size: .75rem
+    }
+}
+
+
+
+a {
+    color: var(--color-dark, #222222);
+    text-decoration: none;
+    opacity: 1;
+}
+
+a:not(.fade-hover):hover {
+    text-decoration: none;
+}
+
+a.fade-hover:hover {
+    opacity: 0.6;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
