@@ -30,8 +30,8 @@ section {
 
 .photo {
   display: block;
-  padding: 0;
-  height: 280px;
+  height: 180px;
+  margin-left: 24px !important;
   width: 100%;
   background-color: var(--color-background,#f9f9f9);
   background-size: cover;
@@ -41,14 +41,31 @@ section {
  /* background-image: url(../assets/images/etsy-photo.png);*/
   background-position: center bottom;
 }
-.photo.reading-photo {
- /* background-image: url(../assets/images/reading-photo.jpg);*/
-  background-position: center 60%;
+.groovy-photo-1 {
+  margin: 24px !important;
+  height: 100%; 
+  width: 80%; 
+  object-fit: contain; 
+  display:block;
+  margin-top: 0 !important;
 }
+
 @media (min-width: 500px) {
-  .photo.reading-photo {
+  .photo.groovy-photo1 {
     background-position: center 50%;
   }
+  .groovy-photo-1 {
+    margin: 64px !important;
+    height: 100%; 
+    width: 80%; 
+    object-fit: contain; 
+    margin-top: 0 !important;
+    display:block;
+  }
+}
+
+section.about {
+  border-bottom: none !important;
 }
 .photo.coding-photo {
 /*  background-image: url(../assets/images/coding-photo.jpg);*/

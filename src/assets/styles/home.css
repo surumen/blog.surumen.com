@@ -273,11 +273,11 @@ p {
     }
 
     .h1 {
-        font-size: 3rem
+        font-size: 2rem
     }
 
     .h2 {
-        font-size: 2.25rem
+        font-size: 1.75rem
     }
 
     .h3 {
@@ -285,7 +285,7 @@ p {
     }
 
     .h4 {
-        font-size: 1.25rem
+        font-size: 1.1rem
     }
 
     .h5 {
@@ -298,6 +298,9 @@ p {
 
     .h7 {
         font-size: .75rem
+    }
+    .p {
+        font-size: .875rem;
     }
 }
 

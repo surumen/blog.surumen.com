@@ -19,28 +19,14 @@
 </template>
 
 <script>
-import helpers from '../helpers/random';
 import Shapes from './Shapes';
-import workJson from '../data/work.json';
-import funFactsJson from '../data/funFacts.json';
 
 export default {
   name: 'Scene',
   components: {
     Shapes,
-  },
-  data() {
-    return {
-      currentWork: workJson[0],
-      randomFact: this.getRandomFact(),
-    };
-  },
-  methods: {
-    getRandomFact() {
-      return helpers.getRandomFromArray(funFactsJson);
-    },
-  },
-};
+  }
+} 
 </script>
 
 <style lang="postcss">

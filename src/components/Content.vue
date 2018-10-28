@@ -63,11 +63,11 @@ export default {
         class="project" 
         v-for="project in projects" 
         v-if="!project.hidden">
-        <h2>
-          <a :href="project.link" target="_blank">{{project.title}}</a>
-        </h2>
-        <p>{{project.description}}</p>
-        <p class="project-links">
+        <h4 class="h4">
+          <a :href="project.link">{{project.title}}</a>
+        </h4>
+        <p class="p">{{project.description}}</p>
+        <p class="project-links p">
           <a 
             v-if="!project.hideLinkIcon"
             class="fade-hover"
@@ -94,8 +94,8 @@ export default {
     </section>
 
     <section class="featured-project" v-if="featuredProject">
-      <h1>Featured Project</h1>
-      <p v-for="paragraph in featuredProject.longDescription">{{paragraph}}</p>
+      <h2 class="h2">Featured Project</h2>
+      <p v-for="paragraph in featuredProject.longDescription" class="p">{{paragraph}}</p>
     </section>
     
     <section class="photo reading-photo"></section>
@@ -109,24 +109,24 @@ export default {
     -->
 
     <section class="about">
-      <h1>About</h1>
-      <p>
+      <h2 class="h2">About</h2>
+      <p class="p">
         I’m a <a :href="queerLink" v-on:click="onQueerClick()" target="_blank">queer</a> Trinidadian-American <a :href="cisgenderLink" v-on:click="onCisgenderClick()" target="_blank">cisgender</a> woman of color. 
         I work as a Senior Software Engineer at <a href="https://etsy.com" target="_blank">Etsy</a> in New York, and I’ve been 
         active in the engineering world for over 6 years.
       </p>
-      <p>
+      <p class="p">
         I was lucky enough to have a supportive mother, who got me thalida.com 
         for my 16th birthday. It was one of the best gifts I’ve ever received, 
         and is the reason I've become the developer I am today.
       </p>
-      <p>
+      <p class="p">
         I now work with an amazing team during the day, and in the wee hours of 
         the night I hack away at one of my many side projects. I'm always 
         looking for a coding buddy, so if you're interested, get in touch! 
         <a href="mailto:hello@thalida.com?subject=Oh%20hi!" target="_blank">hello@thalida.com</a>
       </p>
-      <p>
+      <p class="p">
         I’m generally full of questions, and <a :href="bubbleTeaLink" v-on:click="onBubbleTeaClick()" target="_blank">bubble tea</a>.
       </p>
     </section>
@@ -138,27 +138,27 @@ export default {
     </p>
 
     <section class="work">
-      <h1>Work History</h1>
+      <h2 class="h2">Work History</h2>
       <div 
         class="job" 
         v-for="job in work" 
         v-if="!job.hidden">
-        <h3 class="job-header">
+        <h3 class="job-header h3">
           <span class="job-company">{{job.company}}</span>
           <span class="job-duration">{{job.duration}}</span>
         </h3>
-        <p class="job-title">{{job.title}}</p>
+        <p class="job-title p">{{job.title}}</p>
       </div>
     </section>
 
     <section class="extras bg-accent-light">
-      <h1>In the Wild</h1>
+      <h2 class="h2">In the Wild</h2>
       <div 
         class="extra" 
         v-for="extra in extras" 
         v-if="!extra.hidden">
-        <h2><a :href="extra.link" target="_blank">{{extra.title}}</a></h2>
-        <p>{{extra.description}}</p>
+        <h3 class="h3"><a :href="extra.link" target="_blank">{{extra.title}}</a></h3>
+        <p class="p">{{extra.description}}</p>
       </div>
     </section>
 

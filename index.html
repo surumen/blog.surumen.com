@@ -40,6 +40,17 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono:300,400,700|Signika:700" rel="stylesheet">
+    <script type="text/javascript">//Smooth scrolling with links
+$('a[href*=\\#]').on('click', function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 10000);
+});
+
+// Smooth scrolling when the document is loaded and ready
+$(document).ready(function(){
+  $('html,body, app-left, app-right').animate({scrollTop:$(location.hash).offset().‌​top}, 10000);
+});
+</script>
   </head>
   <body>
     <div id="app"></div>
